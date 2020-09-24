@@ -1,0 +1,366 @@
+
+*{margin:0;padding: 0;}
+/*VARIAVEIS*/
+
+
+                                        /*HEADER*/
+
+nav{
+  align-items: center;
+
+  ul li{
+  margin-right: 5px;
+  background: green;
+  padding-left: 20px;
+  padding-right: 20px;
+    a{
+      color: #fff!important;      
+    }
+
+  }
+}
+
+.segunda-linha{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.collapse{
+  justify-content: center;
+}
+.bg-light{
+  background: #000!important;
+}
+header .linha-topo-header{
+  height: auto;
+  background: lightblue;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+header .contato-zap{
+  display: flex;
+  height: 80px;
+  background: yellow;
+  justify-content: center;
+  align-items: center;
+}
+header .contato-zap .icone-zap{
+  display: flex;
+}
+header .contato-zap .icone-zap .icone-zap{
+  display: flex;
+}
+header .contato-telefone{
+  display: flex;
+  background: lightgreen;
+  height: 80px;
+  align-items: center;
+}
+.cont-lista ul li{
+  margin-right: 0;
+}
+
+.linha-cont-cardapio .cont-desc .icone-pimenta{
+  display: flex;
+  position: relative;
+}
+.linha-cont-cardapio .cont-desc .icone-pimenta .pimenta{
+  width: 30px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.linha-cont-cardapio .cont-desc .icone-pimenta .icon-block{
+  font-size: 50px;
+  position: relative;
+  top: 0;
+  z-index: 2;
+
+
+}
+
+
+
+/*hover-menu*/
+.libtn{
+  
+  border: 4px solid red;
+  color: green;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+}
+
+.libtn::before,.libtn::after{
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 4px;
+  background: green;
+  transform: skewX(50deg);
+  transition: .4s linear;
+}
+
+.libtn::before{
+  top: -4px;
+  left: 10%;
+}
+
+.libtn::after{
+  bottom: -4px;
+  right: 10%;
+}
+
+.libtn:hover::before{
+  left: 80%;
+}
+
+.libtn:hover::after{
+  right: 80%;
+}
+
+
+
+
+
+
+header .linha-topo-header .cont-elcaquito {
+  background: #cec;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+}
+header .linha-topo-header .cont-comida {
+  display: grid;
+  text-align: center;
+  align-content: center;
+}
+header .linha-topo-header .cont-contato {
+  display: grid;
+  text-align: center;
+  align-content: center;
+}
+
+
+header .linha-topo-header .cont-desenho{
+  background: #fafafa;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+
+
+                                        /*main*/
+
+.descricao-site{
+  text-align: center;
+  padding: 10px;
+  height: 40vh;
+  background: lightblue;
+  align-content: center;
+  display: grid;
+}
+
+.linha-titulo-cardapio{
+  text-align: center;
+  margin-top: 80px;
+
+}
+.h3-titulo::after{
+  content:'';
+  display: grid;
+  height: 4px;
+  width: 100px;
+  background: blue;
+  margin: 5px auto;
+  transition: 1s;
+
+}
+.h3-titulo:hover::after{
+  content:'';
+  display: grid;
+  height: 2px;
+  width: 40px;
+  background: red;
+  margin: 5px auto;
+  transition: 1s;
+
+}
+.linha-img-titulo{
+  margin-top: 120px; 
+}
+.linha-img-titulo .img-cardapio{
+  height: 70%;
+  background: lightpink;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.linha-img-titulo .img-cardapio .cont-img-titulo {
+  width: 300px;
+  background: lightgray;
+  border-radius: 50%;
+  padding: 20px;
+
+}
+.linha-img-titulo .img-cardapio .cont-img-titulo-molho {
+  text-align: center;
+}
+.linha-img-titulo .img-cardapio .cont-img-titulo .h3-titulo{
+  text-align: center;
+  margin-bottom: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.linha-img-titulo .content-contato .cont-img-titulo .h3-titulo{
+  text-align: center;
+  margin-bottom: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+.linha-cont-cardapio .cont-desc .icone-pimenta .pimenta{
+  width: 30px;
+}
+
+
+
+.linha-cont-cardapio{
+  height: auto;
+  background: lightpink;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+
+}
+
+.linha-cont-cardapio .cont-img-cardapio{
+  background: lightgreen;
+  height: 50%;
+  margin:10px;
+}
+.linha-cont-cardapio .cont-desc{
+  background: lightblue;
+  height: auto;
+  margin:10px;
+  padding: 10px;
+  width: 290px;
+  border-radius: 0px 20px 20px;
+}
+.linha-cont-cardapio .cont-desc .texto{
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.linha-cont-cardapio .cont-desc .titulo{
+  height: auto;
+}
+.linha-cont-cardapio .cont-desc .molho{
+   background: yellow;
+   position: relative; 
+   bottom: 0;
+}
+.linha-cont-cardapio .cont-desc .molho p{
+  width: 100%;
+  text-align: center;
+  margin: 0;
+
+  
+  
+  margin-top: 10px;
+  width: 100%;
+  
+
+}
+.linha-cont-cardapio .cont-desc .titulo{
+  background: lightyellow;
+  padding: 10px;
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.linha-cont-cardapio .cont-desc .titulo h6{
+  margin: 0;
+}
+.linha-cont-cardapio .cont-desc .titulo .desc-titulo{
+padding: 5px;
+}
+
+.linha-cont-cardapio .cont-desc .titulo .preco{
+  margin-left: auto;
+  color: white;
+  background: red;
+  padding: 5px;
+  border-radius: 5px;
+
+}
+
+                                    /*DELIVEY*/
+.content-delivery{
+  display: grid;
+  justify-content: center;
+  background: #cec;
+
+}
+                                    /*CONTATO*/
+.content-contato{
+  display: grid;
+  justify-content: center;
+}
+
+                                    /*SIDEBAR*/
+
+                                      /*FOOTER*/
+
+.rodape{
+  text-align: center;
+  background: lightgreen;
+
+  position: fixed;
+  bottom: 0;
+  
+
+}
+.rodape h3{
+  text-align: center;
+  margin-bottom: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+
+/*
+.lista-social{
+  text-align: center;
+    margin: 17px;
+    i{
+    font-size: 30px;
+     background: green;
+    padding: 12px;
+    border-radius: 50%;
+  }
+
+    #ifood{
+    background: red;
+    font-size: 11px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+    img{
+  width: 50px;
+  }
+}
+*/
+
+                                        /**/
+

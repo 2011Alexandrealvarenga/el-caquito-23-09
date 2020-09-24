@@ -1,0 +1,837 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+/*VARIAVEIS*/
+$roxo: #492259; 
+$verde: #527800; 
+$laranja-forte: #ffa310; 
+$laranja-claro: #ffd100; 
+$green: #48c857;
+$branco: white;
+$amarelo-claro: #ffff99;
+/*FONT*/
+$paragrafo: 'Maven Pro', sans-serif;
+$titulo-header: 'Slackey', cursive; /*'Rye', cursive;*/
+$titulo: 'Slackey', cursive;
+
+/**/
+
+p{font-family: $paragrafo;
+}
+/*HEADER*/
+
+h2{
+  font-family: $titulo-header;
+  font-size: 40px;
+}
+
+body{
+  background: url('https://elcaquito.com/wp-content/uploads/2020/06/BG_flyer_verso_vfinal-Cópia.png');
+}
+
+.fixed{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 20;
+}
+
+nav {
+  align-items: center; }
+
+nav ul li {
+  margin-right: 5px;
+  background: $roxo;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+nav ul li a {
+  font-family: $titulo;
+  color: #fff !important; }
+
+.nav.navbar-nav.collapse.navbar-collapse{
+  float: left;
+}
+.segunda-linha {
+  padding-left: 0;
+  padding-right: 0; }
+
+  .segunda-linha .navbar-brand{
+    padding-left: 10px;
+    color: $laranja-claro!important;
+  }
+  .segunda-linha .navbar-toggler{
+    float: right;
+  }
+
+.collapse {
+  justify-content: center; }
+
+.bg-light {
+  background: $roxo !important;
+
+   }
+   header .contato-pad{
+    display: grid;
+    justify-content: center;
+   }
+header .cont-elcaquito .img-elcaquito{
+  width: 200px;
+}
+
+header .linha-topo-header .cont-contato .icon-mobile{
+  color: $roxo;
+}
+header .linha-topo-header .cont-contato .icon-whatsapp{
+  color: $roxo;
+}
+header .linha-topo-header .cont-contato .texto{
+  font-family: 'Fira Sans', sans-serif;
+  color: $roxo;
+  margin-right: 30px;
+}
+
+.wp-post-image{
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+}
+header .linha-topo-header {
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+header .contato-zap {
+  width: 100%;
+  justify-content: center;
+  bottom: 0;
+  display: flex;
+  align-items: center; }
+
+header .contato-zap .icone-zap {
+  margin-left: 30px;
+  display: flex; }
+
+header .contato-zap .icone-zap .icone-zap {
+  display: flex; }
+
+header .contato-telefone {
+  display: flex;
+  align-items: center; }
+
+.cont-lista ul li {
+  margin-right: 0; }
+
+.linha-cont-cardapio .cont-desc .icone-pimenta {
+  display: flex;
+  position: relative; }
+
+.linha-cont-cardapio .cont-desc .icone-pimenta .pimenta {
+  width: 30px;
+  position: absolute;
+  top: 0;
+  z-index: 1; 
+  display: flex;
+}
+
+.linha-cont-cardapio .cont-desc .icone-pimenta .icon-block {
+  font-size: 27px;
+  position: relative;
+  top: 0;
+  z-index: 2; 
+  display: flex;
+  color: red;
+}
+
+/*hover-menu*/
+.libtn {
+  border: 4px solid red;
+  color: green;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative; }
+
+.libtn::before, .libtn::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 4px;
+  background: $laranja-claro;
+  transform: skewX(50deg);
+  transition: .4s linear; }
+
+.libtn::before {
+  top: -4px;
+  left: 10%; }
+
+.libtn::after {
+  bottom: -4px;
+  right: 10%; }
+
+.libtn:hover::before {
+  left: 80%; }
+
+.libtn:hover::after {
+  right: 80%; }
+hr{
+  border: 1px solid $laranja-forte;
+}
+header .linha-topo-header .cont-elcaquito {
+  display: grid;
+  justify-content: center;
+  align-content: center; }
+header .linha-topo .cont-desenho .img-desenho{
+  width: 250px;
+}
+header .linha-topo-header .cont-comida {
+  display: grid;
+  text-align: center;
+  align-content: end; }
+header .linha-topo-header .cont-comida h2{
+  font-size: 40px;
+}
+
+header .linha-topo-header .cont-contato {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  align-content: baseline; }
+header .linha-topo-header .cont-contato .icon-whatsapp{
+  font-size: 30px;
+  padding-bottom: 7px;
+}
+header .linha-topo-header .cont-contato .icon-mobile{
+  font-size: 30px;
+  padding-bottom: 5px;
+  display: flex;
+  margin-left: 15px;
+}
+
+header .linha-topo-header .cont-desenho {
+  display: grid;
+  justify-content: center;
+  align-content: center; }
+
+                                /*main*/
+.carousel-item h3{
+  font-family: $titulo;
+}
+.descricao-site {
+  text-align: center;
+  padding: 10px;
+  height: 40vh;
+  align-content: center;
+  display: grid; }
+.descricao-site .titulo-chegou{
+  font-family: $paragrafo;
+}
+
+.linha-titulo-cardapio {
+  text-align: center;
+  margin-top: 80px; }
+#molho, #bebida, #delivery{
+  width: 100%;
+}
+.linha-titulo-cardapio .h3-titulo-secao{
+  text-align: center;
+  margin-bottom: 0;
+  padding-top: 30px;
+  padding-bottom: 30px; 
+  font-family: $titulo;
+}
+.h3-titulo::after {
+  content: '';
+  display: grid;
+  height: 4px;
+  width: 100px;
+  background: $roxo;
+  margin: 5px auto;
+  transition: 1s; }
+
+.h3-titulo:hover::after {
+  content: '';
+  display: grid;
+  height: 4px;
+  width: 40px;
+  background: $green;
+  margin: 5px auto;
+  transition: 1s; }
+
+
+.linha-img-titulo {
+  margin-top: 120px; }
+
+.linha-img-titulo .img-cardapio {
+  height: 70%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.linha-img-titulo .img-cardapio .cont-img-titulo {
+  width: 300px;
+  background: #ffa310;
+  border-radius: 50%;
+  padding: 20px; }
+.linha-img-titulo .img-cardapio .h3-titulo-secao{
+  text-align: center;
+  font-family: $titulo;
+}
+
+.linha-img-titulo .img-cardapio .cont-img-titulo .burrito{
+  width: 260px;
+  height: 144px;
+}
+
+.linha-img-titulo .img-cardapio .cont-img-titulo-molho {
+  text-align: center;
+}
+.linha-img-titulo .img-cardapio .cont-img-titulo-molho h4{
+  font-family: $paragrafo;
+}
+
+
+.linha-img-titulo .img-cardapio .cont-img-titulo .h3-titulo {
+  font-family: $titulo;
+  text-align: center;
+  margin-bottom: 0;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.linha-img-titulo .content-contato .cont-img-titulo .h3-titulo {
+  text-align: center;
+  margin-bottom: 0;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+.linha-img-titulo .content-contato .cont-img-titulo .h3-titulo-secao{
+  font-family: $titulo;
+}
+.linha-cont-cardapio .cont-desc .icone-pimenta .pimenta {
+  width: 30px; }
+
+
+
+.linha-cont-cardapio {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px; }
+
+.linha-cont-cardapio .cont-img-cardapio {
+  background: lightgreen;
+  height: 50%;
+  margin: 10px; }
+
+.linha-cont-cardapio .cont-desc {
+  background: $amarelo-claro;
+  height: auto;
+  margin: 10px;
+  padding: 10px;
+  width: 390px;
+  border-radius: 0px 20px 20px; 
+}
+.linha-cont-cardapio .cont-desc:hover,
+.linha-cont-cardapio .cont-desc-molho:hover
+ {
+  transform: scale(1.02);
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(73, 34, 89, 1);
+}
+.linha-cont-cardapio .cont-desc-molho {
+  background: $amarelo-claro;
+  height: auto;
+  margin: 10px;
+  padding: 10px;
+  width: 390px;
+  border-radius: 0px 20px 20px; 
+  justify-content: center;
+  display: flex;
+}
+.linha-cont-cardapio .cont-desc-molho .img-molho{
+  width: 220px;
+}
+
+.linha-cont-cardapio .cont-desc .texto {
+  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 20px; }
+
+.linha-cont-cardapio .cont-desc .titulo {
+
+  height: auto; }
+
+.linha-cont-cardapio .cont-desc .molho {
+  background: #ffd100;
+  position: relative;
+  border-radius: 5px;
+  bottom: 0; }
+
+.linha-cont-cardapio .cont-desc .molho p {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+  color: #492259;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%; }
+
+.linha-cont-cardapio .cont-desc .titulo {
+  background: #ffd100;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 10px; }
+
+
+/*BEBIDA*/
+.linha-cont-cardapio .img-bebida{
+  justify-content: center;
+  display: flex;
+}
+.linha-cont-cardapio .bebida{
+  width: 220px;
+  transform: rotate(45deg);
+}
+.linha-cont-cardapio .cont-desc .titulo h6 {
+  margin: 0; }
+
+.linha-cont-cardapio .cont-desc .titulo .desc-titulo {
+  color: #492259;
+  font-size: 20px;
+  font-family: $paragrafo;
+  font-weight: bold;
+  padding: 5px; }
+
+.linha-cont-cardapio .cont-desc .titulo .preco {
+  margin-left: auto;
+  color: white;
+  background: #492259;
+  padding: 5px;
+  border-radius: 5px; }
+
+
+
+/*DELIVEY*/
+.linha-cont-bebida {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px; }
+.linha-cont-bebida .cont-desc .titulo-bebida {
+  background: #ffd100;
+  padding: 10px;
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 10px; }
+.linha-cont-bebida .cont-desc .titulo-bebida .preco {
+  margin-left: auto;
+  color: white;
+  background: #492259;
+  padding: 5px;
+  border-radius: 5px; }
+
+
+
+
+
+/*DELIVEY*/
+.content-delivery {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  background: $amarelo-claro;
+  padding: 10px;
+  border-radius: 4px;
+ }
+ .content-delivery .delivery-desc h4.pedido{
+  font-family: $paragrafo;
+  color: $roxo;
+  font-weight: bold;
+ }
+.content-delivery .horario-atendimento h6.endereco{
+  font-weight: bold;
+}
+
+.content-delivery .horario-atendimento h5.horario-func{
+  font-weight: bold;
+}
+.content-delivery .horario-atendimento h5,
+.content-delivery .horario-atendimento h6{
+  font-family: $paragrafo;
+}
+
+
+
+
+
+/*FOTOS*/
+.slide{
+  width: 600px;
+}
+.linha-img-titulo-foto {
+  text-align: center;
+  margin-top: 90px; }
+
+.linha-img-titulo-foto .cont-img-titulo-delivery .comida-mexicana{
+  font-weight: bold;
+  font-family: $titulo;
+}
+/*MOLHO*/
+.pimenta{
+  display: inline;
+}
+.pimenta img, .icone-pimenta img{
+  transform: rotate(-30deg);
+}
+.lista-pimenta p{
+  display: inline;
+  font-weight: bold;
+}
+
+
+
+
+/*CONTATO*/
+.content-contato {
+  display: grid;
+  justify-content: center; }
+
+.linha-img-titulo .contato-conteudo{
+  justify-content: center;
+  display: grid;
+  margin-bottom: 120px;
+}
+.conteudo-mapa{
+  height: 330px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.linha-img-titulo .contato-conteudo .contato-zap{
+  display: flex;
+}
+.linha-img-titulo .contato-conteudo .contato-zap .icone-zap .icon-whatsapp{
+  font-size: 30px;
+  display: flex;
+  margin-top: 5px;
+  color: $roxo;
+}
+.linha-img-titulo .contato-conteudo .contato-telefone{
+  display: flex;
+}
+.linha-img-titulo .contato-conteudo .contato-telefone .icone-zap .icon-mobile{
+  font-size: 30px;
+  display: flex;
+  margin-top: 5px;
+  color: $roxo;
+}
+.linha-img-titulo .contato-conteudo .texto h3{
+  color: $roxo;
+}
+
+
+
+/*SIDEBAR*/
+/*FOOTER*/
+.rodape {
+  padding-left: 0;
+  text-align: center;
+  position: fixed;
+  margin-bottom: 5px;
+  bottom: 0; }
+
+.rodape h3 {
+  text-align: center;
+  margin-bottom: 0;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+  .rodape .lista-social .icon-whatsapp,
+  .rodape .lista-social .icon-facebook,
+  .rodape .lista-social .icon-instagram,
+   {
+    font-size: 30px;    
+    width: 60px;
+    display: inline-block;
+    border-radius: 50%;
+    padding-top: 5px;
+    padding-bottom: 7px;
+  }
+  .rodape .lista-social .icones-social img{
+    width: 115px;
+  }
+  .rodape .lista-social .icon-whatsapp{
+    background: $green;
+    color: $branco;
+  }
+  .rodape .lista-social .icon-facebook{
+    background: #3a559f;
+    color: $branco;
+  }
+
+  .rodape .lista-social .icon-instagram{
+    background: $roxo;
+    color: $branco;
+  }
+  
+
+  .rodape .lista-social .icones-social{
+    padding-right: 29px;
+  }
+
+.rodape .lista-social .icones-social .icon-whatsapp:hover,
+.rodape .lista-social .icones-social .icon-facebook:hover,
+.rodape .lista-social .icones-social .icon-instagram:hover{
+  transform: scale(1.02);
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(73, 34, 89, 1);
+}
+
+
+ 
+
+
+  .rodape .lista-social .icones-social img{
+    margin-left: -18px;
+    margin-bottom: -19px;
+  }
+
+                                          /*celular*/
+@media screen and (min-width: 992px){
+  .navbar-brand{
+    display: none;
+  }
+  .bg-light{
+    background: $laranja-claro!important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .nav.navbar-nav.collapse.navbar-collapse{
+    z-index: 1;
+    position: absolute;
+  }
+  .nav-item.libtn{
+    width: 130px;
+  }
+
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  header .cont-elcaquito .img-elcaquito{
+   width: 150px !important;
+  }
+  header .linha-topo .cont-desenho .img-desenho{
+    width: 180px !important;
+  }
+  
+
+
+
+  header .linha-topo-header .cont-comida h2{
+    font-size: 32px;
+
+  }
+  header .linha-topo-header .cont-contato .texto{
+    margin-right: 0px;
+  }
+  header .contato-zap .icone-zap{
+    margin-left: 0px;
+  }
+  .descricao-site{
+    height: 30vh;
+  }
+}
+
+
+@media screen and (min-width: 678px)and (max-width: 767px){
+  header .linha-topo-header .cont-comida{
+    padding-top: 20px;
+  }
+    header .linha-topo-header .cont-comida h2{
+    font-size: 28px;
+  }
+  .conteudo-mapa{
+    margin-top: 10px;
+
+  }
+
+  header .cont-elcaquito .img-elcaquito{
+   width: 130px !important;
+  }
+  header .linha-topo .cont-desenho .img-desenho{
+    width: 180px !important;
+  }
+}
+
+
+@media screen and (min-width: 540px)and (max-width: 767px){
+  header .linha-topo-header .cont-comida{
+    padding-top: 8px;
+  }
+  header .linha-topo-header .cont-comida h2{
+    font-size: 20px;
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+    header .linha-topo-header .cont-comida{
+    display: grid;
+    text-align: center;
+    align-content: end;
+  }
+  header .linha-topo-header .cont-contato{
+    align-content: baseline !important;
+  }
+  .linha-img-titulo-foto{
+    margin-top: 50px;
+  }
+  .linha-cont-cardapio{
+    margin-top: 10px;
+  }
+  .descricao-site{
+    height: 20vh;
+  }
+  .linha-img-titulo{
+    margin-top: 60px;
+  }
+  header .linha-topo-header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  header .linha-topo-header .cont-elcaquito{
+    display: grid;
+    justify-content: center;
+  }
+
+
+  header .linha-topo-header .cont-contato .contato-zap{
+    justify-content: center;
+    display: flex;
+  }
+
+
+
+  header .linha-topo-header .cont-contato .texto h5{
+    font-size: 12px;
+
+  }
+  header .linha-topo-header .cont-contato .texto{
+    margin-right: 0px;
+
+  }
+  
+
+  header .contato-zap .icone-zap{
+    margin-left: 0px;
+  }
+  header .linha-topo-header .cont-comida .cont-contato .texto h5{
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+  .conteudo-mapa{
+    margin-top: 10px;
+  }
+}
+
+
+@media screen and (min-width: 767px) {
+  .conteudo-mapa{
+    height: 100%;
+  }
+}
+@media screen and (max-width: 539px){
+  header .linha-topo-header .cont-comida{
+    padding-top: 0px;
+  }
+  header .linha-topo-header .cont-comida h2{
+    font-size: 17px;
+  }
+}
+
+
+
+@media screen and (max-width: 477px) {
+  .wp-post-image{
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+  }
+  .rodape{
+    margin-bottom: 7px;
+  }
+  header .linha-topo-header .cont-contato .icon-whatsapp{
+    display: grid;
+    padding-bottom: 0px;
+  }
+  header .linha-topo-header .cont-contato .icon-whatsapp::before{
+    display: grid;
+    justify-content: center;
+    font-size: 10px;
+  }
+  header .linha-topo-header .cont-contato .icon-mobile{
+    padding-bottom: 0px;
+  }
+
+
+  header .linha-topo-header .cont-contato .icon-mobile::before{
+    font-size: 10px;
+  }
+
+  header .contato-pad{
+
+    padding: 0;
+  }
+  header .linha-topo-header .cont-contato .contato-zap .texto h5{
+    margin-bottom: 0;
+
+  }
+  header .linha-topo-header .cont-contato .texto h5{
+    font-size: 10px;
+  }
+  .linha-img-titulo-foto{
+    margin-top: 10px;
+  }
+  .linha-img-titulo-foto .img-cardapio .h3-titulo-secao{
+    font-size: 22px;
+  }
+  .linha-titulo-cardapio{
+    margin-top: -30px;
+  }
+  .linha-titulo-cardapio .h3-titulo-secao{
+    font-size: 22px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .linha-img-titulo{
+    margin-top: 0px;
+  }
+  .linha-img-titulo .img-cardapio .cont-img-titulo .h3-titulo{
+    font-size: 22px;
+  }
+
+}
+@media screen and (max-width: 415px){
+  
+  header .cont-elcaquito .img-elcaquito{
+   width: 58px !important;
+  }
+
+}
+@media screen and (max-width: 380px) {
+    .wp-post-image{
+    width: 600px;
+    height: 220px;
+    object-fit: cover;
+  }
+}
