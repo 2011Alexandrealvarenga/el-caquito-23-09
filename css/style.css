@@ -98,7 +98,7 @@ header .linha-topo-header .cont-desenho { display: grid; justify-content: center
 .linha-cont-cardapio .cont-img-cardapio { background: lightgreen;height: 50%; margin: 10px; }
 
 .linha-cont-cardapio .cont-desc {background: #f2f2f2;height: auto; margin: 10px; padding: 10px; width: 390px;
-  border-radius: 0px 20px 20px; position: relative; }
+  border-radius: 0px 20px 20px; position: relative; min-height: 270px;}
 
 .linha-cont-cardapio .cont-desc:hover,
 .linha-cont-cardapio .cont-desc-molho:hover {transform: scale(1.02); z-index: 1;box-shadow: 0 5px 20px #492259; }
