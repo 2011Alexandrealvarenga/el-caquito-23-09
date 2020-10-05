@@ -132,7 +132,7 @@
     <div class="row linha-img-titulo"><!--BURRITO  -->
       <div class="col img-cardapio">
         <div class="cont-img-titulo" data-aos="fade-right">
-          <h3 class="h3-titulo" >BURRITO</h3>
+          <h3 class="h3-titulo" >BURRITOS</h3>
           <img class="burrito img-fluid lazy" src="<?php bloginfo('template_url'); ?>/img/BURRITO_SALGADO-260x145.png" >
         </div>
       </div>
@@ -166,7 +166,7 @@
     <div class="row linha-img-titulo"><!-- QUESADILHA -->
       <div class="col img-cardapio">
         <div class="cont-img-titulo" data-aos="fade-right">
-          <h3 class="h3-titulo" >QUESADILHA</h3>
+          <h3 class="h3-titulo" >QUESADILHAS</h3>
           <img class="burrito img-fluid lazy" src="<?php bloginfo('template_url'); ?>/img/quesadilha-150-x-150.png" >
         </div>
       </div>
@@ -234,7 +234,7 @@
     <div class="row linha-img-titulo"><!--PORCOES-->
       <div class="col img-cardapio">
         <div class="cont-img-titulo" data-aos="fade-right">
-          <h3 class="h3-titulo" >PORCOES</h3>
+          <h3 class="h3-titulo" >PORÇÕES</h3>
           <img class="burrito img-fluid lazy" src="https://elcaquito.com/wp-content/uploads/2020/06/BURRITO_SALGADO-200x400-1.png" >
         </div>
       </div>
@@ -339,7 +339,7 @@
         <div  id="bebida">            
         <hr>
           <div class="cont-img-titulo-bebida">
-            <h3 class="h3-titulo-secao">BEBIDA</h3>
+            <h3 class="h3-titulo-secao">BEBIDAS</h3>
           </div>
         </div>
       </div>      
